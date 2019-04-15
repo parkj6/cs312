@@ -1,2 +1,2 @@
 # cs312
-Classwork for CS381 (Oregon State University)
+Classwork for CS312 (Oregon State University)
