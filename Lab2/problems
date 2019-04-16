@@ -1,0 +1,29 @@
+Prelab
+
+1. What type of connectors are on the ribbon cables connecting various components within the lab laptops?
+	ZIF (Zero-Insertion Force) Connector
+
+2. What two things are you not removing from the laptop motherboard?
+	The M.2 32GB SSD and Button Battery.
+
+1) There is a Media Access Control (MAC) address printed on a white sticker on the MOBO. This is the MAC address of the built-in Ethernet interface. What is the MAC address for your MOBO? (3 Points)
+	6451069EA2F6
+
+2) There is a tiny gray momentary push-button switch on the MOBO labeled SW154. What does it do? (25 Points)
+	Mute Button
+
+3) Where is the credit-card sized “Smartcard” reader located? (3 Points)
+	left side of the touchpad
+
+4) What Operating System was this laptop designed for? (3 Points)
+	Windows 7 pro
+
+5) On the black plastic bottom frame is listed the input voltage for this laptop. What is the required voltage? (3 Points)
+	19.5V
+
+6) Just under the required voltage are the amperage requirements. A connected power charger needs to be able to provide at least the smaller of the two numbers. What is the smaller amperage listed? (3 Points)
+	2.31A
+
+
+
+

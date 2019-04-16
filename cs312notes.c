@@ -151,9 +151,15 @@ Windows\System:		16bit Windows
 Windows\System32:	64bit Windows
 Windows\SysWOW64:	32bit (Windows on Windows)
 
+// Mac OS Stuff
+actually based on BSD, not Unix
+Core: 			Darwin
+GUI:			Aqua
+command+R:		something...
+Go:				same as "Start" on Windows
+dmg:			Disk Image (img/iso)
 
-
-
+diskutil logistics 	//lists all partition.
 
 
 
