@@ -163,13 +163,45 @@ diskutil logistics 	//lists all partition.
 
 
 
+/////////////////////////
+//  2019-04-15 Wk3 D2  //
+/////////////////////////
+
+// Important GNU/Linux stuff?
+vmlinuz:			kernel compressed as gzip -> 
+systemd:			First thing linux does and only thing it cares about.
+package:			executable compressed into 1 blob. (msi in windows)
+pkgmgr:				package manager, also keeps track of version.
+/usr				Unix system Resource
+					- binaries, docs, libraries, header files, etc.
+					- largest share of data on the system.
+/usr/bin 			General purpose library.
+/usr/local 			Local (user) compiled binaries
+/usr/src 			Linux kernel source code.
+/bin 				Binary files
+/sbin 				System binaries.
+/proc 				Virtual filesystem (created for boot/shutdown)
+/etc 				Most system config are stored.
+/etc/X11			Where graphics settings are kept
+/etc/shells			Allowed shells
+/etc/os-release		What OS is installed
+/etc/fstab			File system mapping table: where, what disks are
+/etc/sudoers		Who can use sudo
+/etc/hosts			Maps hostnames to IP addresses
+/etc/yum.repos.d/	Stores all configured repos for packages
+/dev 				Physical drives, peripherals. 
+
+ps -elf | sort -nr -k 	run
+sudo yum-config-manager --add-repo [repository]
+	sudo yum install epel-release
+sudo yum -y install yum-utils 	// to install repoquery.
+repoquery --tree-requires cowsay	
+
+lynx		// ASCII web browser.
 
 
 
-
-
-
-
+"don't write your own login system, get one of the open source ones"
 
 
 
