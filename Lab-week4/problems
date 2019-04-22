@@ -9,13 +9,36 @@ Prelab
 
 Lab Questions
 1) What are some differences between GPT and MBR-style partition tables? (3 points)
+	Master Boot Records (MBR) uses the standard BIOS partition table (old style).
+	GUID Partition Table (GPT) uses the new Unified Extensible Firmware Interface (UEFI) (new).
+	One advantage over GPT is that it can have more than 4 primary partitions.
+	GPT can handle disks larger than 2 TB whereas MBR cant.
+	GPT use replication and cyclical redundancy check (CRC) protection of the partition table.
+	In GPT, platform operation data are located in partitions. 
+	In MBR, platform operation data are located in unpartitioned or hidden sectors.
+	
+Source: 
+1. https://docs.microsoft.com/en-us/windows-server/storage/disk-management/change-an-mbr-disk-into-a-gpt-disk
+2. https://www.disk-partition.com/gpt-mbr/mbr-vs-gpt-1004.html
+
 
 2) What are some differences between the EXT4 file system we partitioned our primary with, and the FAT32 filesystem that used to prevail? (3 points)
+	FAT stands for File Allocation Table, and it was  made available in Windows 95 and 98. FAT32 is the upgraded version that supports 32-bit architecture and larger disks up to 2 TB. 
+
+
+
+
 
 3) Get the TAs initials, showing that you can ping a website or server on the internet. (25 points)
 
+
+
 4) What is the IP address of your VM? (3 points)
 
+
+
 5) What is the name of your ethernet adapter? (3 points)
+
+
 
 6) What are three types of platforms other than “i386-pc” that grub-install can target? (3 points)
