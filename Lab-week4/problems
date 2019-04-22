@@ -1,0 +1,21 @@
+Prelab
+
+1. Did you go to the Reference Virtual Machines page on Canvas (can be found from the class Home page), go to the link under Boot .ISO images, and download archlinux-2018.04.01-x86_64.iso? (Note that newer versions of Arch may require different steps than the lab manual provides, so be careful with downloading newer versions or from other sources!)
+	Yes.
+
+2. What is the name of the service you will use to allow your system to get an IP address?
+	ip a
+
+
+Lab Questions
+1) What are some differences between GPT and MBR-style partition tables? (3 points)
+
+2) What are some differences between the EXT4 file system we partitioned our primary with, and the FAT32 filesystem that used to prevail? (3 points)
+
+3) Get the TAs initials, showing that you can ping a website or server on the internet. (25 points)
+
+4) What is the IP address of your VM? (3 points)
+
+5) What is the name of your ethernet adapter? (3 points)
+
+6) What are three types of platforms other than “i386-pc” that grub-install can target? (3 points)

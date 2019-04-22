@@ -205,6 +205,73 @@ lynx		// ASCII web browser.
 
 
 
+/////////////////////////
+//  2019-04-15 Wk4 D1  //
+/////////////////////////
+
+//Containers
+- You dont log into a container. 
+- no need for boot or init. 
+- does not emulate x86 processor like a vm so it is much faster.
+- containers are instances of docker image. 
+- cannot be distributed, images can be distributed.
+
+sudo usermod -aG docker $USER //allows docker to be used by user
+
+alpine: minimal OS to run docker on. 
+
+docker images // to see what's installed
+docker run $IMAGENAME $COMMANDS		//run commands directly.
+docker run alpine cat /etc/os-release
+
+docker ps -a // See all running/stopped containers.
+
+// Run nginx webserver as a daemon, forward the port 80 to be displayed by 8080.
+docker run --name web -d -p -8080:80 nginx:alpine  
+docker stop web 	// kill it. 
+docker restart web 		// same command as above, except save time.
+docker stats 			// stats on the container like top command
+
+docker container rm $CONTAINER_NAME // remove old container
+docker image rm alpine:3.5			// remove the container itself.
+
+// list of exited container, -Quiet (only display ID), -Filtered
+docker ps -q -f status=exited 		
+docker container rm $(docker ps -q -f status= exited) //get rid of all 
+docker run --rm hello-world // kills the container after,.
+
+docker run -it alpine sh // run sh inside alpine in interactive mode.
+CTRL + P, CTRL + Q to get out
+docker attach $CONTAINER_NAME // reattaches back to container.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
