@@ -1,0 +1,36 @@
+Jong Park
+CS 312 - System Administration
+Lab 5 - Dockers & Containers
+04/29/2019
+
+Prelab
+1. What three ways/methods are you going to install WordPress using Docker?
+	Docker CLI with Linking
+	Docker CLI with Networks
+	Docker Stack
+
+2. In the stack.yaml you will create, what is the name of the network your containers will use?
+	wpnet
+
+Questions
+1) Get the TAs initials, showing you got to the WordPress setup page. (7 points)
+
+
+
+2) What IPv4 address does the “some-service” container have? (6 points)
+
+
+
+3) What single docker command starts up a container that successfully pings the “some-service” container with 3 ping packets, then removes itself after it runs? (8 points)
+
+docker run --rm --network some-project alpine ping -c 3 some service
+
+4) Get the TAs initials, showing you got to the WordPress setup page via the Docker network. (6 points)
+
+
+
+5) Get the TAs initials, showing that the “docker stack ps wp” command works (6 points)
+
+
+
+6) Get the TAs initials, showing that the “docker ps” command shows the two containers having a different pp time in the Status field. (7 points)

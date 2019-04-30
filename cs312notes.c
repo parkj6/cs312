@@ -206,7 +206,7 @@ lynx		// ASCII web browser.
 
 
 /////////////////////////
-//  2019-04-15 Wk4 D1  //
+//  2019-04-22 Wk4 D1  //
 /////////////////////////
 
 //Containers
@@ -247,8 +247,30 @@ docker attach $CONTAINER_NAME // reattaches back to container.
 
 
 
+/////////////////////////
+//  2019-04-24 Wk4 D2  //
+/////////////////////////
 
 
+Docker does not use glib-c
+it also uses busybox as opposed to full set of utils.
+
+apk -U add build-base gcc abuild binutils binutils-doc gcc-doc //install couple basics
+
+curl -L // followthrough the redirect 
+
+docker start -i webtest // continue where we left off.
+
+dockerfiles -> setup script used to build a specific image.
+
+Swarm manager is a server that manages the swarm.
+
+
+
+
+/////////////////////////
+//  2019-04-24 Wk5 D1  //
+/////////////////////////
 
 
 
