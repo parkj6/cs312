@@ -1,0 +1,40 @@
+Jong Park
+CS 312 - System Administration
+Lab 6 - VM Networking
+05/06/2019
+
+Prelab
+1. Did you go to the Reference Virtual Machines page on Canvas (can be found from the class Home page), go to the link under VirtualBox Virtual Machines, and download Lab5_RoutersAndCompys.ova and credentials.txt?
+
+	Obviously.
+
+2. What is the IPv4 address of the DNS server you will configure your network to use? Can you find who owns/manages this DNS server?
+	Primary DNS server: 8.8.8.8
+	Secondary DNS Server: 8.8.4.4
+	The address is Google Public DNS
+
+Labs
+1) Get the TAs initials, showing that WestAlpineCompy has an IP address of 192.168.2.101. (5 points) 
+
+
+2) Which devices are targeted by these commands? Give the name of the VM of each (e.g. “WestRouter”) (2 points each): 
+a. # ping 192.168.1.111 
+
+
+b. # ping 192.168.1.110 
+
+
+c. # ssh root@192.168.1.111 -p 2222 
+
+
+d. # ssh root@192.168.1.110 
+
+
+e. # ssh root@192.168.1.110 -p 2222 
+
+
+f. # ssh root@192.168.1.111 
+
+
+3) Get the TAs initials, showing that WestAlpineCompy and EastAlpineCompy can ping each other (23 points) 
+

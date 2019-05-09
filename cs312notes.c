@@ -269,29 +269,89 @@ Swarm manager is a server that manages the swarm.
 
 
 /////////////////////////
-//  2019-04-24 Wk5 D1  //
+//  2019-05-01 Wk5 D2  //
 /////////////////////////
 
+Firewall originally started from engines in the car.
+"Nobody is allowed, everyone is an enemy."
+
+Firewall 
+1. Rules
+	permission to drive on the bridge
+	incoming traffic addressed to registered/unused port is blocked.
+	anti-lockout rule: allow port 80 in case the router breaks.
+2. Network Address Translation (NAT)
+	building the bridge
+	allows port-forwarding for incoming connections.
+	allows WAN to make first connection with LAN.
+	Routers are normally built into the hardware, rather than software
+	NAT is is enabled on internal routers but not needed.
+
+10.0.x.x is internal, always dropped on the internet. 
+
+wirespeed: is the device able to transmit data as it is receiving it? if so, no overhead.
+"throw money at the problem is always the solution in IT"
+
+NAT example:
+1. host sends the header
+	S: 10.0.0.1:3345	//random port
+	D: 128.119.40.186:80
+2. NAT router changes datagram source addr and updates table
+	S: 138.76.29.7:5001 //5001 maps original Source
+	D: 128.119.40.186:80
+3. Reply arrives to NAT
+	S: 128.119.40.186:80
+	D: 138.76.29.7:5001
+4. NAT changes the destination address back to orignal computer
+	S: 128.119.40.186:80
+	D: 10.0.0.1:3345	// yay mail.
+
+before: static addresss will be useless outside the network. 
+now: we use static address via mac address. 
+
+NAT breaks VPN
+
+Power and Ethernet crosses alternating currents.
+WAP should be placed in center of the room 
+Dont let metal block the way of WAP
+Separate the channels from overlapping
+5Ghz is weaker than 2.4GHz in range.
 
 
 
 
+/////////////////////////
+//  2019-05-08 Wk6 D2  //
+/////////////////////////
+
+// Windows Active Directory (AD)
+"Domain is like joining a country, except you can never ever leave... it's like North Korea. You'll get killed if you try to."
 
 
+.com could point to a port 987 will be a share server. 
+WiNS - Windows Naming Service (DNS but for local network)
 
+You can pick a specific windows servers if you want. 
+	just edit the DHCP or disable it. 
+	Place a windows server contientiously. because it will take over everything.
 
+PCs in certain domain will be subjected to Group Policies defined on that domain.
+You will have to reinstall windows if you lost access to the domain.
 
+// Certificate Authority (AD CS)
+Group Policies controls who gets which certificates.
 
+//Federation Services (AD FS)
+Login services, authorization services
+AKA OAuth
+You use FS to login and gives you a token for site you are going for.
 
+//Rights Management Services (AD RMS)
+Built-in system for encrypting files and sets user permission.
 
+Windows VM is good for gaming server, but not actually on the machine because needs graphic cards.
 
-
-
-
-
-
-
-
+Server Manager, DHCP (can configure like regedit)
 
 
 
