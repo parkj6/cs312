@@ -1,0 +1,23 @@
+Jong Park
+CS 312 - System Administration
+Lab 8 - Ansible
+05/20/2019
+
+Pre-lab
+1. What is the name of the email client you will install?
+	mutt
+	
+2. What is the name of the special file that the cron program looks for?
+	crontab
+	
+Lab Questions
+1) Get the TAs initials, showing that you are viewing the successful ping of www.orst.edu inside mutt. (4 points)
+
+
+2) Get the TAs initials, showing that you are receiving emails by the minute inside mutt that contain uptime reports. (4 points)
+
+
+3) Individual crontab entries are only processed once per minute. Write a crontab that will execute the uptime command every 10 seconds. Get the TAs initials, showing that you have this crontab created in your VM. Hint: This will require 6 different lines in the crontab. (7 points)
+
+
+4) Get the TAs initials, showing that you can repeatedly execute: "$ curl 192.168.1.XXX" (which is targeting the Alpine VM), with no other commands needed, to display a web page that changes to a new timestamp every 15 seconds. (25 points)

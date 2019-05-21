@@ -356,6 +356,127 @@ Server Manager, DHCP (can configure like regedit)
 
 
 
+/////////////////////////
+//  2019-05-13 Wk7 D1  //
+/////////////////////////
+
+week 9 lab = computer lab tour.
+
+Objective for DevOps: not to get paged at 3 in the morning and get yelled at "you better fix this or you're fired"
+
+SRE = Another word for DevOps (Site Reliability Engineering)
+
+Telemetry: signal of health. (Heartbeat of your system)
+
+SysAdmin questions:
+	- How do you micro-manage these, and do you even want to?
+	- If something is wrong with the particular machine, do you even care?
+	- If you want to push an update, how do you do that to all of them?
+	- And can you really type a few hundred commands thousands of times?
+		- Active Directory
+		- Chef and Puppet
+		- get another job
+
+// Configuration Management (CM)
+Nowadays, just reinstalling the system is much faster than trying to find the drivers crashing. 
+
+
+For example, we really want to just do this (Nightly example):
+1. Spin up a Linux computer
+2. Install the dependencies for the catsGifsNow service software
+3. Download the catGifsNow Git repository''s source code
+4. Build catGifsNow
+5. Start the catGifsNow service
+6. Add this instance of catGifsNow to our load balancer
+
+CM / CM-like programs:
+	- Chef
+	- Puppet
+	- Continuum and other Managed Provider Middleware
+	- Ansible
+
+Jenkins - automation server 
+
+Chef, Puppet:
+- Install a Daemon onto target system:
+	- tracks the host state (packages, files, network connections, etc.)
+	- Receives updates from the controller
+	- Polls for updates every #min or #hour
+	- They operate on "pull" model
+		- installed agent checks for updates
+		- performs those updates
+
+
+Chef uses Ruby
+Puppet uses Puppet config language.
+
+
+Ansible (from Enders game)
+	- operates on "push" model (less efficient).
+		1. Controller has to evaluate the script given to it, 
+		2. decide on the modules needed
+		3. upload those modules
+		4. run the commands
+		5. then remove the modules.
+	- could be set to "pull" model.
+	- Do not need to maintain an agent install.
+	- This is the mechanism, straight from the documentation:
+"Ansible works by connecting to your nodes and pushing out small programs, called "Ansible modules" to them. These programs are written to be resource models of the desired state of the system. Ansible then executes these modules (over SSH by default), and removes them when finished."
+	- You could tell ansible to target a state and install a MySQL and it will install it faster and efficiently than a human would.
+	- Not a shell script, not a service or daemon. 
+	- also does not monitor states. 
+
+Goal of Automation:
+	Remove human error
+	Do things faster
+	Reproducucibility: "No matter what, these exact things definitely work"
+	Auto-remediation: "Did this daemon die? Here's how to restart it. Send me a text if that doesn't work, call me if doesn't work 3 times in a row"
+
+// DevOps review
+Dev Ops needs to worry about SLI, SLO, SLA:
+	- Service Level Indicator: A quantitative measurement of a particular facet of a service: uptime, number hosts contacted, patches installed per hour, etc.
+	- Service Level Objectives: A target value or range of values for an SLI
+	- Service Level Agreement: The contractual agreement that specifies what SLOs we''re attempting to meet, and what happens when we meet, exceed, or fail to meet them.
+	
+
+
+
+
+
+
+
+
+
+/////////////////////////
+//  2019-05-15 Wk7 D3 //
+/////////////////////////
+ssh-keygen -t rsa // to generate ssh key
+
+ssh-copy-id -i ~/.ssh/id_rsa root@192.168.1.20 // copy the adds the key you just created to .ssh folder. 
+
+Ansible playbooks are yaml files that contains instructions to be performed on set of machines
+
+
+
+/////////////////////////
+//  2019-05-20 Wk8 D1 //
+/////////////////////////
+nmap has better traceroute than acctual traceroute utility.
+nmap -v -sS -sV -T4
+
+zenmap: gui for nmap
+
+salts are public information, if you have a dictionary, you can salt it differently with other dictionary words. 
+$6$ // type of salt it was used.
+
+head -n 1 /etc/shadow | cut -f 2 -d":" > pass
+// first line of password, chop it to 2nd delimiter ":" and save to file "pass"
+
+hashcat --help | grep "1800" // hash type specific to kali.
+
+
+
+
 
 
 

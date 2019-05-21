@@ -1,0 +1,34 @@
+Jong Park
+CS 312 - System Administration
+Lab 7 - Windows Server and Active Directory
+05/13/2019
+
+Prelab
+1. What is the IPv4 address of the Domain Controller?
+	192.169.1.2
+
+2. What option must be checked when creating a GPO to prevent users from configuring the GPOs on their own machines?
+	"Turn off Local Group Policy Object Processing"
+
+3. Did you download the WinServer2016Router.ova, WindowsServer2016_Reference.ova, and Win10_DomainPC.ova from the VM Appliances folder in Box?
+	Yarp.
+
+Labs
+1) What is happening in the entry with Event ID 50059? What are the two IP addresses reported in the log entry, and what machines are likely at those IP addresses? (5 points)
+
+
+
+
+2) Similarly, what is happening in the entry with Event ID 60001? What are the two IP addresses reported in the log entry, and what machines are likely at those IP addresses? (5 points)
+
+
+
+
+3) What does the entry in Event ID 50058 say? (5 points)
+
+
+
+4) Get the TAs initials, showing that your PATH contains “C:\Users\Public\Documents” (25 points)
+
+
+
