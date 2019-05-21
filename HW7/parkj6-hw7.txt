@@ -19,7 +19,9 @@ Instructions:
 2. Once it's loaded, open the "CentOS_CLI" VM and 4 "Alpine" VM for testing.
 
 3. On the CentOS_CLI, download and unzip the "parkj6-hw7.zip" file 
-	curl https://raw.githubusercontent.com/parkj6/cs312/master/HW7/parkj6-hw7.zip
+	curl https://raw.githubusercontent.com/parkj6/cs312/master/HW7/parkj6-hw7.zip > hw7.zip
+	sudo yum install -y unzip
+	unzip hw7.zip -d hw7
 
 4. run "ip addr" on alpine machines to verify* that their address are:
 192.168.1.21
