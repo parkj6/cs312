@@ -3,9 +3,33 @@ CS 312 – System Architecture
 HW 7 - Ansible
 May 20, 2019
 
-ansible-playbook webserver.yaml -i hosts.ini
+File Tree (parkj6-hw7.zip):
+.
+├── hosts.ini
+├── hw7script.sh
+├── index.html
+├── parkj6-hw7.txt		# This file
+└── webserver.yaml
 
 
 Instructions:
 
-1. 
+1. Open pfSense VM and wait for it to load.
+
+2. Once it's loaded, open the "CentOS_CLI" VM and 4 "Alpine" VM for testing.
+
+3. On the CentOS_CLI, download and unzip the "parkj6-hw7.zip" file 
+	curl https://raw.githubusercontent.com/parkj6/cs312/master/HW7/parkj6-hw7.zip
+
+4. run "ip addr" on alpine machines to verify* that their address are:
+192.168.1.21
+192.168.1.22
+192.168.1.23
+192.168.1.24
+	*if they aren't assigned these addresses, the script file "hw7script.sh" and "hosts.ini" needs to change to match the address of the 4 Alpine VM machines.
+	
+5. run the hw7script.sh by typing "./hw7script.sh" on to CentOS_CLI
+
+6. type "password" 4 times for each of the Alpine VM's password prompt.
+
+7. Sip your coffee/tea/water and give Jong 100% on the assignment + whatever extra credit you think he deserves. 
