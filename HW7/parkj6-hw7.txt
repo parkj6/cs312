@@ -1,7 +1,11 @@
 Jong Park	
 CS 312 – System Architecture	
-HW 7
+HW 7 - Ansible
 May 20, 2019
 
 ansible-playbook webserver.yaml -i hosts.ini
 
+
+Instructions:
+
+1. 

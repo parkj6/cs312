@@ -1,0 +1,26 @@
+---
+- hosts: HW7nodes
+  gather_facts: no
+  become: true
+  tasks:
+  - name: Ensure Python is at the latest version
+    raw: apk -U add python3
+  - name: Ensure apache is at the latest version
+    apk:
+      name: apache2 
+      state: latest
+  - name: Copy our index.html into place
+    template:
+      src: index.html
+      dest: /var/www/localhost/htdocs/index.html
+    notify:
+    - restart apache
+  - name: ensure apache is running
+    service:
+      name: apache2
+      state: started
+  handlers:
+    - name: restart apache
+      service:
+        name: apache2
+        state: restarted
