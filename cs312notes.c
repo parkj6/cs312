@@ -476,9 +476,13 @@ hashcat --help | grep "1800" // hash type specific to kali.
 
 
 
+/////////////////////////
+//  2019-05-22 Wk8 D2 //
+/////////////////////////
 
 
-
+BSD also uses posix standard. 
+ip addr doesnt work, use iwconfig instead
 
 
 
