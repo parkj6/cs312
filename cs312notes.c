@@ -491,3 +491,72 @@ ip addr doesnt work, use iwconfig instead
 
 
 
+/////////////////////////
+//  2019-05-03 Wk10 D1 //
+/////////////////////////
+
+
+// Qualifications:
+
+leadership skills (imperative)
+	needs "nerds with personalities."
+
+Visionary (crutial)
+
+Project Management skills (critical)
+	deliver things on time as promised
+
+Deep understanding of -- and the abaility to directly relate to -- our business (critical)
+	design functionality - design flow (needs to make sure UI works best)
+
+Understanding of corporate finance (important)
+
+Public speaking is (Required)
+	They wanna know if you have a degree or not (doesn't matter which degree') for management level 
+		(because public image)
+		experience > degree 
+		being able to communicate > delivery (back up what you say)
+
+
+In a small organization, you're gonna get exposed to more stuff a lot quicker.'
+If you're chasing for money, you need to go big, less job.'
+
+"You're not gonna get to a room first thing in the morning an flip the light switch 
+and call the electric company to thank them. You're only gonna get calls only when there's a problem." 
+
+Look at the entire package before signing for jobs. 
+	401k 401k match
+	mileage imbursement
+	high vs low deductable
+	health care (dental? vision?)
+	roll-over leftover unused plans
+	In the management track, higher income, but less job oppertunity since they'll likely to hire from within.'
+
+
+A medical field is most often breached in IT industry.
+
+
+Senate Bill 1551 Synopsis
+
+Any computer can be Breached
+Assume that your data is exposed.
+There needs to be new and improved legislation around data privacy.
+
+set a control like (cards won't work unless 100mi within corvallis. etc.')
+
+
+
+
+https://breachlevelindex.com/
+
+I know what they are and I know what they do and how much it costs.
+
+
+
+
+
+
+
+
+
+
