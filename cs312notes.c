@@ -521,8 +521,7 @@ Public speaking is (Required)
 In a small organization, you're gonna get exposed to more stuff a lot quicker.'
 If you're chasing for money, you need to go big, less job.'
 
-"You're not gonna get to a room first thing in the morning an flip the light switch 
-and call the electric company to thank them. You're only gonna get calls only when there's a problem." 
+"You're not gonna get to a room first thing in the morning an flip the light switch and call the electric company to thank them. You're only gonna get calls only when there's a problem." 
 
 Look at the entire package before signing for jobs. 
 	401k 401k match
